@@ -1,0 +1,74 @@
+Git Setup
+1) Git install link https://git-scm.com/download/win
+2) Click on 64-bit Git for Windows Setup
+3) git --version
+
+Java Setup
+1) https://www.oracle.com/in/java/technologies/javase/javase8-archive-downloads.html 
+2) Sign in Oracle if first time
+3) Windows x64	211.58 MB	jdk-8u202-windows-x64.exe
+4) java -version
+
+Eclipse Setup
+1) Go to https://www.eclipse.org/downloads/
+
+GitHub 
+1) Create a free account on GitHub
+2) Create repository
+3) https://github.com/shivanijamadar/gitExample.git
+4) go to cmd and cd to your project folder
+5) git init
+6) git add filename
+7) configure user password -
+	git config --global user.email "jamadarshivani25@gmail.com"
+	git config --global user.name "shivanijamadar"
+8) git commit -m "first commit"
+9) git remote add origin "https://github.com/shivanijamadar/gitExample.git"
+10) git push origin master
+	Accept authentication from browser
+	Accept git Credential manager
+
+Selenium Setup
+
+Selenium IDE
+1) Go to Chrome
+2) Go to webstore https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd?hl=en
+3) Click on Add extension
+
+TestNG Setup
+1) Help -> Eclipse Marketplace -> TestNg for Eclipse -> Install -> Confirm -> Accept&Finish -> SelectAll -> TrustSelected-> Restart
+
+2) For jars
+	a) after giving annotation Right click add testNG library
+	b) all referenced libraries should be added
+
+Maven setup
+1) Maven install link
+	https://maven.apache.org/download.cgi
+	Windows - apache-maven-3.8.6-bin.zip
+2) Edit System Variables
+	System->path variable->Edit->New->copy folder path
+3) click all Oks
+3) mvn -v
+
+Jenkins Setup
+1) Download Jenkins(Generic Java Package)
+2) Open cmd go to cd Downloads
+3) enter command java -jar jenkins.war 
+4) On browser go to localhost:8080 (Unlock Jenkins page will open)
+5) Password in the cmd after line 3
+6) Install Suggested plugins
+7) Use same username password admin admin (we cannot change it later) 
+
+Selenium Grid Setup
+1) Download Selenium-server-standalone jar
+2) Create a Grid folder in C and keep the downloaded jar and chromedriver
+3) Open cmd from Grid folder
+4) Run command java -jar selenium-server-standalone-3.141.59.jar -role hub (To setup hub)
+5) Open on browser http://localhost:4444/grid/console for Grid Console (cmd should remain open)
+6) Register new node => Open new cmd from Grid folder 
+7) Run command java -Dwebdriver.chrome.driver="chromedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -hub http://localhost:4444/grid/register
+							    Path of chromedriver             jar file 					roleName 		ip address of machine
+
+
+
